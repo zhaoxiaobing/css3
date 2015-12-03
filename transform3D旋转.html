@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>html</title>
+<style type="text/css">
+*{ margin: 0; padding: 0;}
+body{ }
+li{ list-style: none;}
+img{ display: block;}
+#ul_1{ width: 200px; height: 200px; position: relative; margin: 200px auto; 
+perspective: 0;
+-webkit-perspective: 0; 
+-webkit-transform-style:preserve-3d; 
+-webkit-transform: rotateX(10deg) rotateY(10deg);
+-webkit-animation: mydhua 3s linear infinite;
+}
+#ul_1 li{ width: 200px; height: 200px; position: absolute; opacity: 0.4; color: #fff; text-align: center; line-height: 200px; font-size: 50px;}
+#ul_1 li:nth-child(1){ background: red; -webkit-transform: rotateX(90deg) translateZ(-100px);}/* 下 */
+#ul_1 li:nth-child(2){ background: yellow;  -webkit-transform: rotateX(90deg) translateZ(100px);}/* 上 */
+#ul_1 li:nth-child(3){ background: orange; -webkit-transform: rotateY(90deg) translateZ(-100px);}/* 左 */
+#ul_1 li:nth-child(4){ background: green; -webkit-transform: rotateY(90deg) translateZ(100px);}/* 右 */
+#ul_1 li:nth-child(5){ background: cyan ; -webkit-transform: translateZ(100px);}/* 前 */
+#ul_1 li:nth-child(6){ background: blue; -webkit-transform: translateZ(-100px);}/* 后 */
+
+@-webkit-keyframes mydhua{
+
+	0%{-webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);-webkit-transform-origin: center center;}
+	100%{-webkit-transform:rotateX(180deg) rotateY(180deg) rotateZ(180deg);-webkit-transform-origin: center center; }
+}
+</style>
+</head>
+<body>
+
+
+<ul id="ul_1">
+	<li>下</li>
+	<li>上</li>
+	<li>左</li>
+	<li>右</li>
+	<li>前</li>
+	<li>后</li>
+</ul>
+
+
+</body>
+</html>
