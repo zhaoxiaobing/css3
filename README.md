@@ -8,7 +8,6 @@ background: -webkit-linear-gradient(top,#fc0,#f30 50%,#c00 51%,#600);
 -webkit-text-fill-color: transparent;
 ```
 
-
 - 去除a链接阴影
 ```css
 -webkit-tap-highlight-color: transparent; 
